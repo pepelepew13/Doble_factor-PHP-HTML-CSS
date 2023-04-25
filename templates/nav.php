@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="style_login.css">
-<nav class="navbar navbar-expand-sm mt-5" >
+<nav class="navbar navbar-expand-sm mb-2 mt-5" >
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,10 +20,10 @@
         </li>              
       <?php else: ?>
         <li class="nav-item active ">
-          <a class="nav-link text-center" href="register.php" >Registrarse <span class="sr-only"></span></a>
+          <a class="nav-link text-center" href="register.php" >Registrarse<span class="sr-only"></span></a>
         </li>
         <li class="nav-item active " >
-          <a class="nav-link text-center" href="login.php" >Iniciar Sesión <span class="sr-only"></span></a>
+          <a class="nav-link text-center" href="login.php" >Iniciar Sesión<span class="sr-only"></span></a>
         </li>   
       <?php endif; ?>   
     </ul>    

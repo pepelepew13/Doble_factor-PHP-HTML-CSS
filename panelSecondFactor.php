@@ -43,8 +43,9 @@
             <div class="container-login text-center m-5">       
                 <h2>Activar Doble Factor de Autenticación</h2><hr />
                 <p>1. Para activar el segundo factor de autenticación instale Google Authenticator en su celular y escanee el Código QR</p>
-                <img src="<?= $qrCode ?>" alt="Codigo QR">
-
+                <div class="container-login bg-light">
+                    <img src="<?= $qrCode ?>" alt="Codigo QR">
+                </div>  
                 <p class="mt-4">2. Escriba el código generado por Google Authenticator y presione activar doble factor</p>
                 <div class="row">
                     <div class="mx-auto">

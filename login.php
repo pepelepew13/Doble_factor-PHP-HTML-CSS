@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="mx-auto">
-                <h3>Iniciar Sesión</h3><hr />
+                <h3>Iniciar Sesión</h3><hr/>
                 <form id="loginForm" class="container-login mb-5 ">                   
                     <div class="form-group">
                         <label class="label" for="email" >Correo Electronico</label>

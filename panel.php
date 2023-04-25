@@ -24,8 +24,8 @@
 
     <div class="container">        
         <h3>Panel de usuario</h3><hr />
-      <div class="container-login mb-5">
-
+      <div class="container-login mb-5 text-center">
+        <button class="btn-primary" onclick="window.location='curruculum.php'">Hoja de vida</button>
       </div>
     </div>
     
