@@ -1,4 +1,4 @@
-<?php
+    <?php
 
   include './templates/header.php';  
   
@@ -26,20 +26,20 @@
 
     <?php include './templates/nav.php' ?>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-md-6">
+            <div class="mx-auto">
                 <h3>Iniciar Sesión</h3><hr />
-                <form id="loginForm">                   
+                <form id="loginForm" class="container-login mb-5 ">                   
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">            
+                        <label class="label" for="email" >Correo Electronico</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email">            
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <label class="label" for="password">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Contraseña" id="password">
                     </div>      
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <button type="submit" class="btn-primary">Ingresar</button>
                 </form>
                 <div class="alert alert-danger mt-4 d-none" id="errorMessage"></div>
             </div>
@@ -74,6 +74,8 @@
 
         }
     </script>
+
+
     
 </body>
 </html>

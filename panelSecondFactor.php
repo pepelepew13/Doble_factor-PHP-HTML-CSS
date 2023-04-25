@@ -39,29 +39,33 @@
     <?php include './templates/nav.php' ?>
 
     <?php if (!$hasTwoFactorActive): ?>
-        <div class="container mt-5">        
-            <h5>Activar Doble Factor de Autenticación</h5><hr />
-            <p>1. Para activar el segundo factor de autenticación instale Google Authenticator en su celular y escanee el Código QR</p>
-            <img src="<?= $qrCode ?>" alt="Codigo QR">
+        <div class="container "> 
+            <div class="container-login text-center m-5">       
+                <h2>Activar Doble Factor de Autenticación</h2><hr />
+                <p>1. Para activar el segundo factor de autenticación instale Google Authenticator en su celular y escanee el Código QR</p>
+                <img src="<?= $qrCode ?>" alt="Codigo QR">
 
-            <p class="mt-4">2. Escriba el código generado por Google Authenticator y presione activar doble factor</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <form id="activateSecondFactor">                   
-                        <div class="form-group">
-                            <label for="code">Código</label>
-                            <input type="text" class="form-control" id="code">            
-                        </div>
-                        <button type="submit" class="btn btn-primary">Activar Doble Factor</button>
-                    </form>              
-                    <div class="alert alert-danger mt-4 d-none" id="errorMessage"></div>  
+                <p class="mt-4">2. Escriba el código generado por Google Authenticator y presione activar doble factor</p>
+                <div class="row">
+                    <div class="mx-auto">
+                        <form id="activateSecondFactor" class="form-group">             
+                            <div class="form-group">
+                                <label for="code" class="label" >Código</label>
+                                <input type="text" class="form-control" placeholder="000-000" id="code">            
+                            </div>
+                            <button type="submit" class="btn-primary">Activar Doble Factor</button>
+                        </form>              
+                        <div class="alert alert-danger mt-4 d-none" id="errorMessage"></div>  
+                    </div>
                 </div>
             </div>
         </div>
     <?php else: ?>
-        <div class="container mt-5">        
-            <h5>Desactivar Doble Factor de Autenticación</h5><hr />
-            <button type="button" class="btn btn-primary" id="deactivateSecondFactor">Desactivar Doble Factor</button>
+        <div class="container">
+            <div class="container-login m-5">        
+                <h2>Desactivar Doble Factor de Autenticación</h2><hr />
+                <button type="button" class="btn-primary" id="deactivateSecondFactor">Desactivar Doble Factor</button>
+            </div>
         </div>
     <?php endif; ?>
 

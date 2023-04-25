@@ -19,8 +19,7 @@
     <?php include './templates/nav.php' ?>
 
     <div class="container mt-5">        
-        <h3>Home</h3><hr />
+        <h3>Bienvenidos a su hoja de vida con doble factor</h3><hr />
     </div>
-    
 </body>
 </html>

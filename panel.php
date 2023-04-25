@@ -22,8 +22,11 @@
 
     <?php include './templates/nav.php' ?>
 
-    <div class="container mt-5">        
+    <div class="container">        
         <h3>Panel de usuario</h3><hr />
+      <div class="container-login mb-5">
+
+      </div>
     </div>
     
 </body>

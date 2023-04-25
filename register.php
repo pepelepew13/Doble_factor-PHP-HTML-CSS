@@ -21,25 +21,25 @@ if ($userController->isUserLoggedIn()) {
 
     <?php include './templates/nav.php' ?>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-md-6">
+            <div class="mx-auto">
                 <h3>Nuevo Usuario</h3>
                 <hr />
-                <form id="registerForm">
+                <form id="registerForm" class="container-login mb-5">
                     <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="name">
+                        <label for="name" class="label" >Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" id="name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <label for="email" class="label" >Correo Electronico</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <label for="password" class="label" >Contraseña</label>
+                        <input type="password" class="form-control" placeholder="Contraseña" id="password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                    <button type="submit" class="btn-primary">Crear cuenta</button>
                 </form>
                 <div class="alert alert-danger mt-4 d-none" id="errorMessage"></div>
             </div>
