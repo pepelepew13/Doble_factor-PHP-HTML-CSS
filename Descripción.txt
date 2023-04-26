@@ -1,0 +1,2 @@
+En esta pagina combino todos los metodos. Html para la pagina, php para el login y el doble factor, 
+javascript para el envio de datos por medio de composer y css para el diseño.

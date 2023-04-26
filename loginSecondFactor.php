@@ -26,16 +26,16 @@
 
     <?php include './templates/nav.php' ?>
 
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-md-6">
+            <div>
                 <h3>Segundo Factor de Autenticación</h3><hr />
-                <form id="secondFactorForm">                   
+                <form id="secondFactorForm" class="container-login m-5">                   
                     <div class="form-group">
-                        <label for="code">Código</label>
+                        <label for="code" class="label">Código</label>
                         <input type="text" class="form-control" id="code">            
                     </div>                    
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <button type="submit" class="btn-primary">Ingresar</button>
                 </form>
                 <div class="alert alert-danger mt-4 d-none" id="errorMessage"></div>
             </div>
